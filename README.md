@@ -215,3 +215,7 @@ orchestrator, so moving from the CLI to an SDK does not change the protocol.
   versions current at the time of writing (`codex-cli 0.162`), so adjust
   `extra_args` if your version differs.
 - There is one task at a time per repository. Use separate worktrees for parallel tasks.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
