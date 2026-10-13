@@ -1,0 +1,11 @@
+{
+  "title": "Add slugify helper",
+  "goal": "Implement textutil.slugify(text) that turns a human title into a URL slug.",
+  "acceptance_criteria": [
+    "slugify('Hello World') == 'hello-world'",
+    "Punctuation and repeated whitespace collapse into a single hyphen; no leading/trailing hyphens",
+    "Unit tests cover the behaviour and pass"
+  ],
+  "files": ["textutil.py", "test_textutil.py"],
+  "test_command": "python3 -m unittest -q"
+}

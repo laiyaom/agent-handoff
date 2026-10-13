@@ -1,0 +1,16 @@
+{
+  "roles": {"coder": "codex", "reviewer": "claude"},
+  "max_fix_rounds": 3,
+  "max_step_retries": 1,
+  "require_human_approval": true,
+  "max_diff_chars": 60000,
+  "test_timeout": 900,
+  "agents": {
+    "codex": {"adapter": "codex_cli", "command": "codex", "extra_args": [], "timeout": 1800},
+    "claude": {
+      "adapter": "claude_cli", "command": "claude", "extra_args": ["--model", "opus"], "timeout": 1800,
+      "write_allowed_tools": ["Read", "Grep", "Glob", "Edit", "Write", "Bash(python3 -m unittest:*)"]
+    },
+    "gemini": {"adapter": "command", "command": ["gemini", "-p"], "timeout": 1800}
+  }
+}

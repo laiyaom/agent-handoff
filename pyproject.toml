@@ -1,0 +1,11 @@
+[project]
+name = "agent-handoff"
+version = "0.1.0"
+description = "Lightweight Codex <-> Claude Code handoff orchestrator over shared task files"
+requires-python = ">=3.9"
+
+[project.scripts]
+agent-handoff = "handoff.cli:main"
+
+[tool.setuptools]
+packages = ["handoff", "handoff.adapters"]
